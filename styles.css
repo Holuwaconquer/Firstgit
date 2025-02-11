@@ -1,3 +1,9 @@
+@font-face {
+  font-family: myFont;
+  src: url('./fonts/TT\ Firs\ Neue\ Trial\ Regular.ttf'), url('./fonts/TT\ Firs\ Neue\ Trial\ Bold.ttf');
+  font-weight: bold;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +13,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: myFont;
+    scroll-behavior: smooth;
   }
   .header-section{
     padding: 20px 0px;
@@ -52,10 +60,11 @@
     background-color: #181a1b;
     background-image: linear-gradient(to right, #181a1b, #4a4c4d);
     border-radius: 40px;
-    padding: 30px 10%;
+    padding: 50px 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   .showcase-section .left-item{
     padding: 20px 40px;
@@ -97,22 +106,20 @@
     color: #8a8989;
     font-size: 12px;
   }
-  /* .showcase-section .right-item{
-    
-  }
-  .showcase-section .right-item img{
+  
+  /* .showcase-section .right-item img{
     position: absolute;
     bottom: 0;
     right: 0;
-  }
-   */
+  } */
+  
 .destinations-title-content p{
   color: #181a1b;
   font-weight: bold;
   font-size: 14px;
 }
 
-.link-bg{
+.link-bg, .link-bg2, .link-bg3{
   width: 100%; 
   border-radius: 30px; 
   padding: 15px 20px; 
@@ -142,19 +149,36 @@
   font-weight: bold;
 }
 .finding-info{
-  background-color: azure;
-}
-
-.right-info .column-1{
-  background-color: #fff;
-  width: 80%;
+  background-color: rgb(227, 230, 230);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
 }
 .find-info-content{
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  gap: 50px;
 }
+
 .find-info-content .right-info{
   width: 50%;
+}
+.link-bg{
+  background: url(https://images.pexels.com/photos/5951553/pexels-photo-5951553.jpeg?auto=compress&cs=tinysrgb&w=600)
+  center no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+.link-bg2{
+  background: url('./image/pexels-mikhail-nilov-7988742.jpg') center no-repeat;
+  background-size: cover;
+  height: ;
+}
+.link-bg3{
+  background: url(https://images.pexels.com/photos/1766604/pexels-photo-1766604.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
