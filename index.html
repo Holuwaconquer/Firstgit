@@ -6,40 +6,47 @@
   <title>Document</title>
   <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-    
-  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body >
-
   <!-- Navigation bar and header section -->
   <header class="header-section">
     <div class="navigation-bar">
-      <div class="logo-title"><h3>AI Ally</h3></div>
+      <div class="logo-title"><a style="text-decoration: none;" href="index.html"><h3>AI Ally</h3></a></div>
       <ul class="navbar-section">
-        <li><a href="">Home</a></li>
-        <li><a href="">Features</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">Testimonials</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimony">Testimonials</a></li>
       </ul>
       <a class="sign-in-btn" href="">Sign in</a>
+      <!-- mobile-menu -->
+      <div class="mobile-menu">
+        <img class="menu-bar" src="./icons/menu.png" width="30px" alt="">
+        <ul class="menu-link">
+          <li class="mobile-menu-link"><a href="index.html">Home</a></li>
+          <li class="mobile-menu-link"><a href="features">Features</a></li>
+          <li class="mobile-menu-link"><a href="pricing">Pricing</a></li>
+          <li class="mobile-menu-link"><a href="testimony">Testimonials</a></li>
+          <a class="sign-in-btn" href="">Sign in</a>
+        </ul>
+      </div>
     </div>
   </header>
 
   <!-- showcase section -->
-  <div class="showcase-section">
+  <div class="showcase-section " data-aos="fade-up">
     <div class="left-item">
       <h1>Unleash the full potential of AI</h1>
       <p>AI Ally is a versatile assistant that utilizes state-of-the-art
         natural language processing to provide real-time support and assistance
         across various domains
       </p>
-      <div class="pt-3">
-        <a class="first-child" href="">Get the App</a> 
+      <div class="py-5">
+        <a class="first-child" href="">Get the App <img style="margin-left: 10px;" width="20px" src="./icons/right-arrow.png" alt=""></a> 
         <a href="">More</a>
       </div>
-      <div class="pt-5 countdown-ratings">
+      <div class="countdown-ratings">
         <!-- ratings 1 -->
         <div class="count-1">
           <h2>4.8</h2>
@@ -54,15 +61,15 @@
     </div>
 
     <div class="right-item">
-      <img width="300px" src="./image/001-holding-hand-UI-UX-device-samrt-phone-iphone-app-graphic-scene-showacase-free-psd-mockup-pixeden-removebg-preview.png" alt="">
+      <img width="350px" src="./image/upscalemedia-transformed.png" alt="">
     </div>
   </div>
 
-  <!-- end of showcase section -->
+    <!-- end of showcase section -->
 
-  <!-- start of different destinations -->
-   <div class="destinations p-5">
-    <div class="destinations-title">
+    <!-- start of different destinations -->
+   <div class="destinations" data-aos="fade-up" data-aos-duration="2000">
+    <div class="destinations-title px-5">
       <h2>Different destinations</h2>
       <div class="destinations-title-content row">
         <p class="col-md">We explore the diverse ways in which this technology
@@ -71,7 +78,7 @@
         <p class="col-md">Discover how Ai can streamline processes and elevate your work
           to new heights.
         </p>
-        <p style="text-align: right;" class="col-md text-right">Discover all applications</p>
+        <p style="text-align: right;" class="col-md text-right"><a class="discover-link" href="#">Discover all applications <span><img style="margin-left: 5px; width: 20px;" src="./icons/right.png" alt=""></span></a></p>
       </div>
 
       <div class="destinations-card row">
@@ -90,9 +97,10 @@
           <div class="link-bg2" >
             <a style="text-decoration: none; border-radius: 50px; color: black; background-color: #fff; padding: 10px 10px;" href="">Try it now</a>
           </div>
-          <h3>Students</h3>
-          <p>AI Ally can assist in research provide learning materials,
-            and answer questions
+          <h3>Professionals</h3>
+          <p>
+            AI Ally can provide quick access to relevant information
+            an offer data analysis insights
           </p>
         </div>
 
@@ -101,64 +109,215 @@
           <div class="link-bg3" >
             <a style="text-decoration: none; border-radius: 50px; color: black; background-color: #fff; padding: 10px 10px;" href="">Try it now</a>
           </div>
-          <h3>Students</h3>
-          <p>AI Ally can assist in research provide learning materials,
-            and answer questions
+          <h3>Writers</h3>
+          <p>AI Ally can help writers by generating ideas suggesting
+            improvement in writing style
           </p>
         </div>
       </div>
     </div>
-
     <div class="destinations-footer py-5 text-center">
       <a class="destinations-footer-link" href="">And more than 50 other destinations</a>
     </div>
-
    </div>
 
    <!-- end of destinations section -->
 
    <!-- start of finding information page -->
-    <div class="finding-info py-5">
-      <div class="find-info-content w-75">
+    <div id="features" class="finding-info py-5">
+      <div class="find-info-content">
         <div class="left-info">
-          <img width="250px" src="./image/Smart-Phone-Mockup-Design-Graphics-43084718-1-removebg-preview.png" alt="">
+          <img width="250px" src="./image/pic2.png" alt="" data-aos="zoom-in-left">
         </div>
-        <div class="right-info">
-            <p style="background-color: #fff;" class="rounded-3 py-3 px-4">Finding Information</p>
+        <div class="right-info" data-aos="zoom-in-right">
+            <p style="background-color: #fff;" class="rounded-3 py-3 px-4"><img style="margin-right: 10px; width: 25px;" src="./icons/magnifying-glass (1).png" alt=""><span>Finding Information</span></p>
             <div class="bg-dark text-light rounded-3 py-3 px-4 mb-3">
-              <h3>Help for designers</h3>
+              <h3><img style="margin-right: 10px; width: 25px;" src="./icons/save.png" alt=""><span>Help for designers</span></h3>
               <p>AI-powered applications can analyse vast amounts
                 of visual data and provide designers with inspiration
                 for their creative projects.
               </p>
             </div>
-            <p style="background-color: #fff;" class="rounded-3 py-3 px-4">Home Automation</p>
-            <p style="background-color: #fff;" class="rounded-3 py-3 px-4">Entertainment</p>
-            <p style="background-color: #fff;" class="rounded-3 py-3 px-4">Planning Assistance</p>
-
+            <p style="background-color: #fff;" class="rounded-3 py-3 px-4"><img style="margin-right: 10px; width: 25px;" src="./icons/smart-home.png" alt=""><span>Home Automation</span></p>
+            <p style="background-color: #fff;" class="rounded-3 py-3 px-4"><img style="margin-right: 10px; width: 25px;" src="./icons/media.png" alt="">Entertainment</p>
+            <p style="background-color: #fff;" class="rounded-3 py-3 px-4"><img style="margin-right: 10px; width: 25px;" src="./icons/calendar.png" alt="">Planning Assistance</p>
         </div>
         </div>
       </div>
     </div>
 
+    <!-- testimonies section -->
+     <div id="testimony" class="testimonials" data-aos="fade-up" data-aos-duration="2000">
+      <div class="row">
+        <h2 class="col-md-4">Testimonials</h2>
+        <p class="col-md-4">Don't just take our word for it - hear from our satisfied
+          clients who have experienced the transformative impact of 
+          our AI test tool.</p>
+          <p class="col-md-4">LEarn how this powerful tool has revolutionized their work
+            and accelerated their success.
+          </p>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg">
+          <div class="row testimony-1">
+            <p>"The excellent voice recognition quality of AI Ally
+              app makes it perfect for dictation and note taking. I
+              have never come across such accuracy before"</p>
+            <div class="col-flex pt-5">
+                <div style="border-radius: 50%; width: 50px; height: 50px; overflow: hidden;"><img style="width: 100%; height: 100%; object-fit: cover;" src="./image/IMG-20241228-WA0001_enhanced-removebg-preview.png" alt=""></div>
+              <div class="user-title">
+                <h4>Craig</h4>
+                <p>CEO, Aveva</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- column 2 -->
+        <div class="col-lg">
+          
+          <div class="row testimony-2">
+            <p>
+              "Witht the help of AI Ally, my work has become much easier and 
+              efficient. It provides quick and accurate answers to any questions
+              i come across"
+            </p>
+            <div class="col-flex pt-5">
+              <div style="border-radius: 50%; width: 50px; height: 50px; overflow: hidden;"><img style="width: 100%; height: 100%; object-fit: cover;" 
+                src="./image/istockphoto-1364917563-612x612-removebg-preview.png" alt=""></div>
+              <div class="user-title">
+                <h4>David Smith</h4>
+                <p>Head of HR, Instill</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- column 3 -->
+        <div class="col-lg">
+          <div class="row testimony-3">
+            <p>
+              "I love how AI Ally personalizes to my needs and offers
+              recommendations and solutions based on my preferences
+              and behaviours"
+            </p>
+            <div class="col-flex pt-5">
+              <div style="border-radius: 50%; width: 50px; height: 50px; overflow: hidden;"><img style="width: 100%; height: 100%; object-fit: cover;" 
+                src="./image/pexels-pixabay-415829-removebg-preview.png" alt=""></div>
+              <div class="user-title">
+                <h4>Marilyn Lang</h4>
+                <p>UX Designer, Cyber Unit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
 
+     <!-- end of testimonials section -->
 
+     <!-- start of favorite plan section -->
 
+     <div id="pricing" data-aos="fade-up" class="checkout-section m-5">
+      <h2 class="mb-5">Choose your favorite plan</h2>
+      <!-- creating a row column for the pricing table -->
+      <div class="row checkout-table">
+        <!-- set each of the row in a div row -->
+        <div class="row pt-3 rounded-4 bg-dark">
+          <!-- i set each of the paragrap as a column-->
+          <p class="col-sm col-md-4 col-lg-6">Subcription Level</p>
+          <p style="background-color: #54ea54; margin-right: 10px; color: #181a1b;" class="col-md rounded-3 py-2">Basic</p>
+          <p style="background-color: #54ea54; margin-right: 10px; color: #181a1b;" class="col-md rounded-3 py-2">Advanced</p>
+          <p style="background-color: #54ea54; margin-right: 10px; color: #181a1b;" class="col-md rounded-3 py-2">Premium</p>
+        </div>
+        <div class="row sm-display gy-3 border-bottom border-dark">
+          <p class="col-6">Number of Users</p>
+          <p class="col">1</p>
+          <p class="col">Up to 5</p>
+          <p class="col">Unlimited</p>
+        </div>
+        <div class="row sm-display gy-3 border-bottom border-dark">
+          <p class="col-6">Customer Support</p>
+          <p class="col">Online</p>
+          <p class="col">Priority</p>
+          <p class="col">Premium</p>
+        </div>
+        <div class="row sm-display gy-3 border-bottom border-dark">
+          <p class="col-6">Monthly Requests</p>
+          <p class="col">1000</p>
+          <p class="col">5000</p>
+          <p class="col">Unlimited</p>
+        </div>
+        <div class="row sm-display gy-3 border-bottom border-dark">
+          <p class="col-6">Data Packages</p>
+          <p class="col">1GB</p>
+          <p class="col">5GB</p>
+          <p class="col">10Gb</p>
+        </div>
+        <div class="row sm-display gy-3 border-bottom border-dark">
+          <p class="col-6">Flexible Cancellation</p>
+          <p class="col">Available</p>
+          <p class="col">Available</p>
+          <p class="col">Available</p>
+        </div>
+        <div class="row sm-display gy-3 border-bottom border-dark">
+          <p class="col-6">Monthly Cost</p>
+          <p class="col">$9.99</p>
+          <p class="col">$19.99</p>
+          <p class="col">$39.99</p>
+        </div>
+        <!-- end of pricing table -->
 
+        <div class="d-md-flex flex-row footer-download justify-content-center align-items-center">
+          <div class="footer-left">
+            <h1>Try it right now</h1>
+            <p>
+              Download the AI Ally on the AppStore and Google Play
+              and discover the world of artificial intelligence! Enjoy
+              innovative AI technologies directly on your device.
+            </p>
+            <img width="150px" src="./image/download-removebg-preview_enhanced.png" alt="">
+            <img width="150px" src="./image/OIP-removebg-preview_enhanced.png" alt="">
+          </div>
+            <img class="align-self-end" width="250px" src="./image/pic2.png" alt="">
+        </div>
+      </div> 
+    </div>
 
+      <div class="footer">
+        <div class="footer-navigation-bar border-bottom border-dark">
+          <div class="footer-logo-title"><h3>AI Ally</h3></div>
+          <ul class="footer-navbar-section">
+            <li><a href="">Home</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Testimonials</a></li>
+          </ul>
+          <ul class="footer-navbar-section">
+            <li><a href="">Instgram</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="copyright d-flex flex-row justify-content-between">
+          <p><a href="#">Copyright &copy; 2025 AI Ally</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+        </div>
+      </div>
 
+     <!-- end of favourite plan section -->
 
-
-
-
-
-
-
-
-
-
-
+     <!-- Footer section -->
+      
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+      AOS.init({
+        duration:1500,
+        offset:5,
+        delay:10,
+      });
+      AOS.refresh();
+    </script>
+    
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
 </body>
